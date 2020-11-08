@@ -1,0 +1,82 @@
+
+@import './variables';
+@import '~bootstrap/dist/css/bootstrap.css';
+@font-face {
+    font-family: MHeiHK_Medium;
+    src: url(../fonts/MHeiHK-Medium.otf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: MHeiHK_Heavy;
+    src: url(../fonts/MHeiHK-Heavy.OTF);
+    font-display: swap;
+}
+.module {
+    .MHeiHK {
+        font-family: MHeiHK_Medium;
+        &.heavy {
+            font-family: MHeiHK_Heavy;
+            font-weight: 700;
+        }
+    }
+    .text {
+        &-red {
+            color: $primary;
+        }
+        &-grey {
+            color: $secondary;
+        }
+        &-white {
+            color: #fff;
+        }
+    }
+    .bg {
+        &-red {
+            background-color: $primary;
+        }
+    }
+    .wrapper {
+        margin: auto;
+        max-width: 1500px;
+        .row {
+            &.pd {
+                max-width: 100%;
+                padding: 50px;
+                margin: 0;
+                @media (max-width: 767px) {
+                    padding: 20px 0;
+                }
+            }
+        }
+        p {
+            word-wrap: break-word;
+        }
+        .pb-20 {
+            padding-bottom: 20px;
+        }
+        .pt-20 {
+            padding-top: 20px;
+        }
+    }
+    .btn-red {
+        padding: 5px 15px;
+        border: none;
+        display: block;
+        background-color: $primary;
+        color: #fff;
+        &:focus,
+        &:active {
+            outline: none;
+        }
+    }
+
+    .m {
+        &l-auto {
+            margin-left: auto;
+        }
+        &-auto {
+            margin: auto;
+        }
+    }
+}
