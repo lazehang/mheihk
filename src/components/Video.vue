@@ -5,7 +5,7 @@
             <img :src="thumbnail" />
         </div>
         <div>
-            <button class="btn-red m-auto" @click="toggle">立即覲看</button>
+            <button class="btn-red m-auto block" @click="toggle">立即覲看</button>
         </div>
         <div v-if="showModal" class="yt-modal">
             <div class="yt-inner">

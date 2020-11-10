@@ -16,7 +16,7 @@
     .MHeiHK {
         font-family: MHeiHK_Medium;
         &.heavy {
-            font-family: MHeiHK_Heavy;
+            font-family: "Segoe UI","Microsoft JhengHei",微軟正黑體,Helvetica,Arial,sans-serif;
             font-weight: 700;
         }
     }
@@ -29,6 +29,9 @@
         }
         &-white {
             color: #fff;
+        }
+        &-19 {
+            font-size: 19px;
         }
     }
     .bg {
@@ -62,7 +65,6 @@
     .btn-red {
         padding: 5px 15px;
         border: none;
-        display: block;
         background-color: $primary;
         color: #fff;
         &:focus,
@@ -70,7 +72,9 @@
             outline: none;
         }
     }
-
+    .block {
+        display: block;
+    }
     .m {
         &l-auto {
             margin-left: auto;
